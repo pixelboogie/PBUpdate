@@ -1,0 +1,66 @@
+
+body{
+    background-color: #ececf3;
+}
+
+#myTitle {
+  position: relative;
+  top: 10px;
+  margin: auto;
+  padding-bottom: 5px;
+  text-align: center; 
+}
+
+h1{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 70px;
+  text-shadow: 6px 7px 10px rgba(0, 0, 0, 0.53);
+  color: #3a3a3a;
+  letter-spacing: 6px;
+}
+
+
+
+
+#vidDiv{
+  position: relative;
+  border: 2px solid #67793a;
+  margin: auto;
+  background-color:rgba(21, 76, 78, 0.5);
+  -webkit-box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.53);
+  -moz-box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.53);
+  box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.53);	
+  padding: 5px;
+  border-radius: 4px;
+  max-width: 800px;
+}
+
+
+video{
+  position: relative; 
+  right: 0; 
+  bottom: 0;
+  width: auto; 
+  height: auto; 
+  overflow: hidden;
+  background-color: black;
+  width: 100% !important;
+  height: auto !important;
+}
+
+#clipInfo{
+  position: relative;
+  margin: auto;
+  width: 800px;
+}
+
+p{
+  font-family: 'Verdana', 'Helvetica';
+  color: black;
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+

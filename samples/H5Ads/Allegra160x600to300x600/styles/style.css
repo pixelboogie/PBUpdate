@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../images/Page160x600.png");    
+    background-repeat: no-repeat;
+}
+button {
+    background-color: #0068FF;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+}
+
+
+#c_ctaDiv{
+    position: absolute;
+    top:236px;
+    display: block;
+    width: 160px;
+    right: 0px;
+    z-index: 106;
+}
+
+
+#c_border{
+    background-image: url("../images/c_border.png");    
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 600px;
+    z-index: 105;
+}
+
+
+
+#c_txt1{
+    z-index: 100;
+    opacity: 0;
+}
+#c_txt2{
+    position: absolute;
+    top:0;
+    width: 160px;
+    height: 600px;
+    z-index: 99;
+    opacity: 0;
+}
+#c_txt3{
+    position: absolute;
+    top:0;
+    width: 160px;
+    height: 600px;
+    z-index: 98;
+    opacity: 0;
+}
+
+#c_txt4{
+    position: absolute;
+    top:0;
+    width: 160px;
+    height: 600px;
+    z-index: 97;
+    opacity: 0;
+}
+#c_txt5{
+    position: absolute;
+    top:0;
+    width: 160px;
+    height: 600px;
+    z-index: 96;
+        opacity: 0;
+}
+
+#c_cornerFlip{
+    background-image: url("../images/c_cornerFlip.png");    
+    position: absolute;
+    left:-2px;
+
+    display: block;
+    width: 160px;
+    height: 600px;
+    z-index: 92;
+}
+
+#c_corner{
+    background-image: url("../images/c_corner.png");    
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 600px;
+    top: 0px;
+    right: 0px;
+    z-index: 91;
+}
+
+  
+
+#c_sign{
+    background-image: url("../images/c_sign.png");    
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 600px;
+    z-index: 90;
+}
+
+
+
+
+#x_close{
+    position: absolute;
+    display: block;
+    top:0;
+    left: 244px;
+    z-index: 60;
+    background-repeat: no-repeat;
+}
+
+#x_biker{
+    background-image: url("../images/x_biker.png");    
+    position: absolute;
+    display: block;
+    top:0;
+    left: 0;
+    width: 300px;
+    height: 600px;
+    z-index: 59;
+}
+
+
+
+#x_bg{
+    background-image: url("../images/x_bg.jpg");   
+    position: absolute;
+    display: block;
+    top:0;
+    left: 0;
+    width: 300px;
+    height: 600px;
+    z-index: 5;
+    opacity: 1;
+}
+
+
+
+#x_txt1{
+     position: absolute;
+    top:0;
+    width: 160px;
+    height: 600px;
+    z-index: 50;
+    opacity: 0;
+}
+#x_txt2{
+    position: absolute;
+    top:0;
+    width: 160px;
+    height: 600px;
+    z-index: 49;
+    opacity: 0;
+}
+#x_txt3{
+    position: absolute;
+    top:0;
+    width: 160px;
+    height: 600px;
+    z-index: 48;
+    opacity: 0;
+}
+
+
+button:hover,
+button:active {
+    color: #FAF000;
+}
+button:active {
+    font-size: 11px;
+}
+body {
+    margin: 0px;
+}
+#container {
+    position: absolute;
+    left:548px;
+    top: 118px;
+    display: block;
+    width: 300px;
+    height: 600px;
+    display: none;
+}
+#container.vis{
+    display: block;
+}
+#ad {
+    position: absolute;
+     display: block;
+    right: 0px;
+    overflow: hidden;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#ad.collapsed {
+
+
+   
+
+    width: 160px;
+    /*2px smaller to account for border*/
+    
+    height: 600px;
+    /*2px smaller to account for border*/
+
+     cursor: pointer;
+}
+#ad.expanded {
+    width: 300px;
+    /*2px smaller to account for border*/
+    
+    height: 600px;
+    /*2px smaller to account for border*/
+     cursor: pointer;
+}
+#banner {
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 600px;
+    right: 0px;
+    background-color: #FFF;
+    background-image: url(../images/c_bg.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+#panel {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.expanded #banner {
+    display: none;
+}
+.collapsed #panel {
+    display: none;
+}
+
+button.btnClose {
+    position: absolute;
+    top: 10px;
+    left:300px;
+    text-align: right;
+}
+
+#banner {
+    background-size: 160px auto;
+}

@@ -1,0 +1,71 @@
+<!-- HTML 5 Ad Template from DoubleClick by Google -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Studio Enabler Required -->
+	<script src="http://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel=StyleSheet HREF="DCRM_HTML5_Expanding_Video_Left_onRollOver_300x250_500x250.css" type="text/css">
+    <script src="DCRM_HTML5_Expanding_Video_Left_onRollOver_300x250_500x250.js" type="text/javascript"></script>
+    <script language="javascript">
+		if(Enabler.isInitialized()){
+			setPosition();
+		}else{
+			Enabler.addEventListener(studio.events.StudioEvent.INIT, setPosition)
+		}
+			
+		function setPosition(){
+			Enabler.setExpandingPixelOffsets('200','0');
+		}	
+    </script>	
+	
+</head>
+
+<body onload="init()">  <!-- Call JS Initial Function when below has loaded in -->
+    <div id="container_dc">
+    	
+        <!-- Collapsed Conent -->
+        <div id="content_dc">
+	    
+        <!--	<img src="logo_dc.png" id="myLogoImg">-->
+		<!--	<img src="img/tune.png" id="tune">-->
+			<img src="img/logo.png" id="logo">
+			<img src="img/cta.png" id="cta">
+			<img src="img/bg.jpg" id="bg">
+        </div>
+        
+        <!-- Expand Content -->
+        <div id="expand_content_dc">
+        
+            <button id="expanded_background_exit_dc"></button>  
+	    
+	    <img src="img/x_bg.jpg" id="x_bg">
+	     <!--   <img src="img/x_tune.png" id="x_tune">-->
+			
+			
+            <div id="video_container_dc">
+	    <img src="img/presents.png" id="x_presents">
+			
+            	<video id="video_dc" autoplay>
+			
+             <source id="video_1_mp4_src_dc" type="video/mp4" src="Tonight.mp4" />
+			
+                </video>
+		
+        	<img src="img/play.png" id="video_control_play_dc" class="video_controls_dc">
+            	<img src="img/pause.png" id="video_control_pause_dc" class="video_controls_dc">
+	        <img src="img/stop.png" id="video_control_stop_dc" class="video_controls_dc">
+                <img src="img/replay.jpg" id="video_control_replay_dc" class="video_controls_dc">
+           	<img src="img/unmute.png" id="video_control_unmute_dc" class="video_controls_dc">
+            	<img src="img/mute.png" id="video_control_mute_dc" class="video_controls_dc">
+            </div>
+        	<div id='close_btn_dc'></div>
+    	</div>
+    
+    </div>
+    
+</body>
+
+</html>
+

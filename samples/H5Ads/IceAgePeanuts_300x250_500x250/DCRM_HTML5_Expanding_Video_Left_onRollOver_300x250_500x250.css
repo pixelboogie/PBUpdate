@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Default style, feel free to remove if not needed. */
+body{
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+
+	  background-image: url("img/Page300x250.png"); background-repeat: no-repeat; 
+
+}
+
+
+
+#myLogoImg{
+	position:absolute;
+	top:4px;
+	left:4px;
+	z-index: 3;
+}
+#logo{
+	position:absolute;
+	top:-8px;
+	left:-202px;
+	z-index: 2;
+	opacity: 0;
+}
+
+
+#logo.anim{
+	opacity: 1;
+transition: all .5s;
+-ms-transition: all .5s;
+-moz-transition: all .5s;
+-webkit-transition: all .5s;
+-o-transition: all .5s;
+}
+
+
+
+
+
+#bg{
+	position:absolute;
+	top:0;
+	left:0;	
+}
+#cta{
+	position:absolute;
+	top:7px;
+	left:134px;	
+	z-index: 4;
+}
+#tune{
+	position:absolute;
+	top:180px;
+	left:6px;	
+	z-index: 5;
+	
+	opacity: 0;
+}
+
+#tune.anim{
+	opacity: 1;
+	
+	transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;	
+}
+
+
+
+
+
+#x_tune{
+	position:absolute;
+	top:150px;
+	left:6px;	
+/*	z-index: 200;*/
+}
+
+
+#x_presents{
+	position:absolute;
+	top:190px;
+	left:-106px;	
+	z-index: 601;
+
+
+}
+
+
+
+
+/* Div layer for the entire banner. */
+#container_dc {
+	position: absolute;
+	top: 119px;
+	left: 485px;
+	margin: auto;
+	width:500px;
+	height:250px;
+	cursor: pointer;
+
+}
+
+#close_btn_dc {
+	position:absolute;
+	top:4px;
+	right:4px;
+	cursor: pointer;
+	width:20px;
+	height:18px;
+	background-image: url('img/close.png');
+	z-index:600;
+}
+
+#content_dc {
+	position: absolute;
+	width: 298px;
+	height: 248px;
+	top: 0px;
+	right: 0px;
+	background-color: #FFF;
+	z-index: 100;
+	/*background-image: url('DCRM_HTML5_Expanding_Video_Left_onRollOver_300x250.png');*/
+	/*background-repeat:no-repeat;*/
+	border: 1px solid #666; 
+}
+
+#expand_content_dc{
+	position: absolute;
+	width: 498px;
+	height: 248px;
+	top: 0px;
+	left: 0px;
+	background-color: #FFF;
+	z-index: 200;
+	display:none;
+	/*background-image: url('DCRM_HTML5_Expanding_Video_Left_onRollOver_500x250.png');*/
+	/*background-repeat:no-repeat;*/
+	border: 1px solid #666; 
+	cursor: pointer;
+}
+
+
+/* Invisible button for background clickthrough. */
+#expanded_background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+/* Div layer containing the video player and video controls. */
+#video_container_dc {
+	position: absolute;
+	width: 388px;
+	height: 220px;
+	left: 105px;
+	/*background-color:#FFF;*/
+	z-index: 500;
+	top:11px;
+	
+
+	
+}
+
+#video_dc {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	width: 388px;
+	height: 220px;
+	border: 0;
+	
+
+/*
+	border-radius: 17px;
+	-moz-border-radius: 17px;
+	-ms-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	-o-border-radius: 17px;
+	*/
+	
+}
+
+.video_controls_dc {
+	position: absolute;
+/*	width: 20px;
+	bottom: 20px;
+	height:18px;*/
+	top: 195px;
+	cursor: pointer;
+}
+
+/* Video button hiding an positioning */
+.video_controls_dc:hover {
+	opacity:0.8;
+	
+}
+
+#video_control_play_dc {
+/*	background-image:url('img/play.png');
+	background-repeat:no-repeat;*/
+	left: 330px;
+	width:12px;
+	height: 14px;
+}
+
+#video_control_pause_dc {
+/*	background-image:url('img/pause.png');
+	background-repeat:no-repeat;
+*/
+	left: 330px;
+	visibility: hidden;
+	width: 12px;
+	height: 14px;
+
+}
+
+#video_control_stop_dc{
+/*	background-image:url('Stop.png');
+	background-repeat:no-repeat;*/
+	left: 30px;
+	visibility: hidden;
+}
+
+#video_control_unmute_dc {
+/*	background-image:url('img/unmute.png');
+	background-repeat:no-repeat;*/
+	right: 10px;
+	width: 21px;
+	height: 15px;
+z-index: 597;
+}
+
+#video_control_mute_dc {
+	right: 10px;
+	width: 21px;
+	height: 15px;
+	visibility: hidden;
+	z-index: 598;
+}
+
+#video_control_replay_dc {
+	position: absolute;
+/*	background-image:url('Replay.png');
+	background-repeat:no-repeat;*/
+	left: 0;
+	top:0;
+	z-index: 599;
+
+}
+#video_control_replay_dc:hover {
+
+opacity:1;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+

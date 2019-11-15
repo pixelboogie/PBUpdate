@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head> 
+<meta charset="utf-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<title>PixelBoogie - HTML5 Rich Banner: 300x250 (Video)</title>
+<link rel="stylesheet" href="style.css"/> 
+<script type="text/javascript" src="rich_banner.js"></script>
+<script type="text/javascript">
+	var video;
+	/*
+	function initEB(){
+		if (!EB.isInitialized()) {
+			EB.addEventListener(EBG.EventName.EB_INITIALIZED, startAd);
+		}
+		else {
+			startAd();
+		}
+	}
+	*/
+
+
+
+
+
+	function startAd() {
+		document.getElementById("banner").style.visibility = "visible";
+
+	ad = document.getElementById("ad");
+	ad.classList.add("vis");
+/*
+	. cont = document.getElementById("container");
+	 cont.classList.add("vis");
+
+	 	window.addEventListener("load", setTimeout(startAd, 2000));
+*/
+
+		video = document.getElementById("video");
+		initVideo();
+
+		people = document.getElementById("people");
+		logo = document.getElementById("logo");
+
+		people.className='goUp';
+		logo.className='down';
+
+		// chaining animations
+		people.addEventListener("webkitAnimationEnd", animTaglines, false);
+		people.addEventListener("animationend", animTaglines, false);
+		people.addEventListener("oanimationEnd", animTaglines, false);
+		people.addEventListener("MSAnimationEnd", animTaglines, false);
+	}
+	
+	function initVideo() {
+	//	var videoTrackingModule = new EBG.VideoModule(video);
+	}
+	
+	function handleClickthroughButtonClick() {
+		console.log("mainClick")
+		video.pause();
+		//EB.clickthrough();
+	}
+
+	function twitterClick() {
+		console.log("twitterClick")
+		video.pause();
+		//EB.clickthrough("twitterClick");
+	}
+	function facebookClick() {
+		console.log("facebookClick")
+		video.pause();
+	//	EB.clickthrough("facebookClick");
+	}
+
+	function animTaglines(){
+	
+		tag1 = document.getElementById("tag1");
+		tag1.className='anim';
+		tag1.addEventListener("webkitAnimationEnd", animTag2, false);
+		tag1.addEventListener("animationend", animTag2, false);
+		tag1.addEventListener("oanimationend", animTag2, false);
+		tag1.addEventListener("MSAnimationEnd", animTag2, false);
+
+		//	console.log('in animTaglines');
+	}
+	function animTag2(){
+		tag2 = document.getElementById("tag2");
+		tag2.className='anim';
+		tag2.addEventListener("webkitAnimationEnd", animTag3, false);
+		tag2.addEventListener("animationend", animTag3, false);
+		tag2.addEventListener("oanimationend", animTag3, false);
+		tag2.addEventListener("MSAnimationEnd", animTag3, false);
+	}
+	function animTag3(){
+		tag3 = document.getElementById("tag3");
+		tag3.className='anim';
+		tag3.addEventListener("webkitAnimationEnd", animTag4, false);
+		tag3.addEventListener("animationend", animTag4, false);
+		tag3.addEventListener("oanimationend", animTag4, false);
+		tag3.addEventListener("MSAnimationEnd", animTag4, false);
+	}
+	function animTag4(){
+		tag4 = document.getElementById("tag4");
+		tag4.className='anim';
+		tag4.addEventListener("webkitAnimationEnd", animSocial, false);
+		tag4.addEventListener("animationend", animSocial, false);
+		tag4.addEventListener("oanimationend", animSocial, false);
+		tag4.addEventListener("MSAnimationEnd", animSocial, false);
+	}
+	function animSocial(){
+		social = document.getElementById("social");
+		social.className='anim';
+
+		socialTwitter = document.getElementById("socialTwitter");
+		socialTwitter.className='anim';
+		socialTwitter.addEventListener("webkitAnimationEnd", animSocial2, false);
+		socialTwitter.addEventListener("animationend", animSocial2, false);
+		socialTwitter.addEventListener("oanimationend", animSocial2, false);
+		socialTwitter.addEventListener("MSAnimationEnd", animSocial2, false);
+
+	}
+function animSocial2(){
+		socialFacebook = document.getElementById("socialFacebook");
+		socialFacebook.className='anim';
+		socialFacebook.addEventListener("webkitAnimationEnd", animSocial3, false);
+		socialFacebook.addEventListener("animationend", animSocial3, false);
+		socialFacebook.addEventListener("oanimationend", animSocial3, false);
+		socialFacebook.addEventListener("MSAnimationEnd", animSocial3, false);
+}
+
+function animSocial3(){
+		socialIdol = document.getElementById("socialIdol");
+		socialIdol.className='anim';
+		socialIdol.addEventListener("webkitAnimationEnd", animTune, false);
+		socialIdol.addEventListener("animationend", animTune, false);
+		socialIdol.addEventListener("oanimationend", animTune, false);
+		socialIdol.addEventListener("MSAnimationEnd", animTune, false);
+}
+
+function animTune(){
+		tune = document.getElementById("tune");
+		tune.className='anim';
+	}
+
+//window.addEventListener("load", setTimeout(startAd, 3000));
+
+</script>
+</head> 
+<body onload="setTimeout(startAd, 1000)"> 
+	<div id="ad">
+		<div id="banner">
+			<div id="videoContainer" class="video-container centered">
+				<video id="video" controls poster="images/poster.png">
+					<source src="videos/video.mp4" type="video/mp4">
+					<source src="videos/video.webm" type="video/webm">
+					Your browser does not support the <code>video</code> element.
+				</video>
+			</div>
+			<div id='tagline'>
+				<img id='tag1' class='start' src='images/tag1.png'>
+				<img id='tag2' class='start' src='images/tag2.png'>
+				<img id='tag3' class='start' src='images/tag3.png'>
+				<img id='tag4' class='start' src='images/tag4.png'>
+			</div>
+			<div id='social' class='start'>
+				<img id='socialTwitter' class='start' src='images/social_twitter.png' onclick="javascript:twitterClick();">
+				<img id='socialFacebook' class='start' src='images/social_facebook.png' onclick="javascript:facebookClick();">
+				<img id='socialIdol' class='start' src='images/social_idol.png' onclick="javascript:handleClickthroughButtonClick();">
+				<img id='socialBacking' class='start' src='images/social_backing.png' onclick="javascript:handleClickthroughButtonClick();">
+			</div>
+			<div>
+				<img id='logo' src='images/logo.png'>
+				<img id='people' class='static' src='images/people.png'>
+				<img id='tune' class='start' src='images/tune_post.png'>
+			</div>
+			<div>
+			<button onclick="javascript:handleClickthroughButtonClick();"></button>
+			</div>
+		</div>
+	</div>
+</body> 
+</html>

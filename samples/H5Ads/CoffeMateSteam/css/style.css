@@ -1,0 +1,82 @@
+body {
+  background-image: url("../imgs/kitchen-wallpaper-texture2.jpg"); background-repeat: no-repeat; 
+}
+div :not(#banner){
+      position: absolute;
+}
+#banner {
+    width: 569px;
+    height: 461px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    background: #fff;
+    overflow: hidden;
+   margin:0 auto;
+   
+    border: 1px solid #888888;
+}
+
+
+#imgHolder {
+}
+
+#coffee {
+}
+
+#table {
+  position: absolute;
+  top:1px;
+  left: 1px;
+  background-image: url("../imgs/table.jpg"); background-repeat: no-repeat; 
+  z-index: 10;
+  width: 567px;
+  height: 459px;
+}
+
+#tableCoffee {
+  position: absolute;
+  top:1px;
+  left: 1px;
+  background-image: url("../imgs/tableCoffee.png"); background-repeat: no-repeat; 
+  z-index: 11;
+  width: 567px;
+  height: 459px;
+  opacity: 0;
+}
+
+#tableCoffee.fadeIn {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  opacity: 1;
+}
+
+
+#resolve {
+    width: 567px;
+    height: 459px;
+    left: 1px;
+    top: 1px;
+   margin:0 auto;
+   z-index: 12;
+  background-image: url("../imgs/resolve.jpg");
+  opacity: 0;
+}
+
+#resolve.fadeIn {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  opacity: 1;
+}
+
+
+/* STEAM Styles */
+#steamPosition { left: 120px; top:-150px; z-index:20;}
+#steam { top:-150px; width: 300px; height: 419px; background-image: url('../imgs/steamImg.png'); background-repeat: no-repeat; visibility: hidden;
+}

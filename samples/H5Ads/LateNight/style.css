@@ -1,0 +1,133 @@
+/* 
+Title: 	Reset default browser styles
+Author:	http://meyerweb.com/eric/tools/css/reset/ 
+			v2.0 | 20110126
+			edited by ForbiddenToast.com 
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, /*table /* [FT] messes up table center ,*/ caption, tbody, tfoot, thead, th, /*td /* [FT] removes inline padding ,*/, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/ /*[FT] messes up Dreamweaver design view*/
+	/*vertical-align: baseline;*/ /*[FT] moves table content to the bottom*/
+}
+
+img, iframe {
+	border: 0; /*[FT]*/
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*-------- Styles --------*/
+
+body {
+	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #CCC;
+	line-height: 1.3;
+	margin: 0px;
+	background-color: #fff;
+}
+
+body#skin {
+	background-color: #fff;
+}
+
+h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 5px;
+}
+
+p {
+	margin: 0;
+}
+
+a:link, a:visited {
+	color: #CCC;
+}
+
+a:hover, a:active {
+	color: #FFF;
+}
+
+#nav {
+	background-color: #333;
+}
+
+#wrapper {
+	background-image: url(skin.jpg);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1300px;
+	height: 1360px;
+	margin: 0 auto;
+	
+}
+
+#wrapper.b {
+	background-image: url(skin2.jpg);
+	height: 740px;
+}
+
+#content {
+	/*background-image: url(ShutIn_Blinds_Lineup_Skin_Nov11-content.jpg);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center top;*/
+	width: 970px;
+	/*height: 1300px;*/
+	margin: 0 auto;
+	position: relative;
+}
+
+#banner1 {
+	position: absolute;
+	top: 86px ; /*970x250: 146px;  970x150: 86px */
+	left: 0px;
+}
+
+#wrapper.b #banner1 {
+	top: 86px;
+}
+
+body#a1 .a1, body#a2 .a2, body#a3 .a3,  body#a4 .a4, body#a5 .a5, body#a6 .a6,
+body#b1 .b1, body#b2 .b2, body#b3 .b3,  body#b4 .b4, body#b5 .b5, body#b6 .b6,
+body#c1 .c1, body#c2 .c2, body#c3 .c3,  body#c4 .c4, body#c5 .c5, body#c6 .c6,
+body#d1 .d1, body#d2 .d2, body#d3 .d3,  body#d4 .d4, body#d5 .d5, body#d6 .d6,
+body#e1 .e1, body#e2 .e2, body#e3 .e3,  body#e4 .e4, body#e5 .e5, body#e6 .e6,
+body#f1 .f1, body#f2 .f2, body#f3 .f3,  body#f4 .f4, body#f5 .f5, body#f6 .f6,
+body#g1 .g1, body#g2 .g2, body#g3 .g3,  body#g4 .g4, body#g5 .g5, body#g6 .g6,
+body#h1 .g1, body#h2 .g2, body#h3 .g3,  body#h4 .g4, body#h5 .g5, body#h6 .h6
+{
+	color: #FFF;
+	font-weight: bold;
+}

@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    background-image: url("../images/Page160x600.png");
+    background-repeat: no-repeat;
+}
+
+
+#ad {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    width: 160px;
+    height: 600px;
+    left:687px;
+    top:118px;
+    /*
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    */
+}
+#banner {
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 600px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+#border
+ {
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 20;
+}
+
+#FX
+ {
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 19;
+}
+#guyLeft
+ {
+    position: absolute;
+    left: -160px;
+    top:0;
+    z-index: 18;
+}
+#guyRight
+ {
+    position: absolute;
+    left: 160px;
+    top:0;
+    z-index: 17;
+}
+
+#TUF
+ {
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 16;
+}
+#tuneIn
+ {
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 15;
+}
+#logo
+ {
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 13;
+}
+#vs
+ {
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 14;
+
+}
+
+#gray
+ {
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 12;
+}
+
+
+/* opacity: 0;*/
+#logo, #vs, #tuneIn, #TUF, #FX
+ {
+    opacity: 0;
+}

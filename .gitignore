@@ -1,0 +1,9 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore files mp4
+*.mp4
+
+# Ignore files PSD
+*.PSD
+

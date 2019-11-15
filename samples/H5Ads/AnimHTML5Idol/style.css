@@ -1,0 +1,343 @@
+body {
+  font-family: Arial, sans-serif;
+    background-image:url(images/PageBG.jpg);
+    background-size: 1185px 930px;
+  background-position: 0px 0px;
+  background-repeat:no-repeat;
+  background-color: #585858;
+}
+
+button {
+  background-color: #0068FF;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  opacity: 0;
+}
+
+button:hover, button:active {
+
+}
+
+button:active {
+
+}
+
+body{
+  margin:0px;
+}
+
+#ad{
+   display: none;
+   border: rgb(145,153,153) 1px solid;
+   overflow:hidden;
+   width: 978px;
+   height: 248px;
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+   position:absolute;
+  left: 158px;
+  top: 52px;
+
+}
+#ad.vis{
+  display: block;
+}
+#banner{
+  position:absolute;
+  display: block;
+  width: 978px;
+  height: 248px;
+  background-color: #FFF;
+  background-image:url(images/bg2.jpg);
+  background-position: 0px 0px;
+  background-repeat:no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.video-container {
+  position: absolute;
+  left: 11px;
+  top: 9px;
+  height: 230px;
+  width: 379px;
+  z-index: 30;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+}
+
+
+#social{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 20;
+  opacity: 1;
+}
+#social.start{
+ opacity: 0; 
+}
+#social.anim{
+ opacity: 1; 
+}
+#socialTwitter{
+  position: absolute;
+  left: 409px;
+  top: 155px;
+  z-index: 21;
+  opacity: 1;
+}
+#socialTwitter.start{
+  opacity: 0;
+}
+#socialTwitter.anim{
+  -webkit-animation:fadeIn .2s;
+  -moz-animation:fadeIn .2s;
+  -ms-animation:fadeIn .2s;
+  -o-animation:fadeIn .2s;
+  animation:fadeIn .2s;
+}
+
+#socialFacebook{
+  position: absolute;
+  left: 409px;
+  top: 183px;
+  z-index: 22;
+  opacity: 1;
+}
+#socialFacebook.start{
+  opacity: 0;
+}
+
+#socialFacebook.anim{
+  -webkit-animation:fadeIn .2s;
+  -moz-animation:fadeIn .2s;
+  -ms-animation:fadeIn .2s;
+  -o-animation:fadeIn .2s;
+  animation:fadeIn .2s;
+}
+
+#socialIdol{
+  position: absolute;
+  left: 409px;
+  top: 211px;
+  z-index: 23;
+}
+#socialIdol.start{
+  opacity: 0;
+}
+#socialIdol.anim{
+  -webkit-animation:fadeIn .2s;
+  -moz-animation:fadeIn .2s;
+  -ms-animation:fadeIn .2s;
+  -o-animation:fadeIn .2s;
+  animation:fadeIn .2s;
+}
+
+#people{
+  position: absolute;
+  left: 0px;
+  z-index: 19;
+  top: 0px;
+}
+
+#people.static{
+  top: 200px;
+}
+
+#people.goUp {
+
+    -webkit-animation:peopleUp 1.3s;
+    -moz-animation:peopleUp 1.3s;
+    -ms-animation:peopleUp 1.3s;
+    -o-animation:peopleUp 1.3s;
+    animation:peopleUp 1.3s;
+
+   -webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);
+   -moz-transition-timing-function: cubic-bezier(0,0,0.58,1);
+   -ms-transition-timing-function: cubic-bezier(0,0,0.58,1);
+   -o-transition-timing-function: cubic-bezier(0,0,0.58,1);
+   transition-timing-function: cubic-bezier(0,0,0.58,1);
+}
+
+#logo{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 18;
+}
+#logo.static{
+  top: -50px;
+}
+#logo.down{
+    -webkit-animation:logoDown .5s;
+    -moz-animation:logoDown .5s;
+    -ms-animation:logoDown .5s;
+    -o-animation:logoDown .5s;
+    animation:logoDown .5s;
+
+  -webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);
+  -moz-transition-timing-function: cubic-bezier(0,0,0.58,1);
+  -ms-transition-timing-function: cubic-bezier(0,0,0.58,1);
+  -o-transition-timing-function: cubic-bezier(0,0,0.58,1);
+  transition-timing-function: cubic-bezier(0,0,0.58,1);
+}
+
+
+#tag1, #tag2, #tag3, #tag4{
+  position: absolute;
+  left: 0px;
+  opacity: 1;
+}
+
+#tag1.start, #tag2.start, #tag3.start, #tag4.start{
+  position: absolute;
+  left: -30px;
+  opacity: 0;
+}
+
+#tag1.anim, #tag2.anim, #tag3.anim, #tag4.anim{
+    -webkit-animation:tagRight .5s;
+    -moz-animation:tagRight .5s;
+    -ms-animation:tagRight .5s;
+    -o-animation:tagRight .5s;
+    animation:tagRight .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tune{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 17;
+}
+#tune.start{
+  opacity: 0;
+}
+#tune.anim{
+  -webkit-animation:fadeIn 3s;
+  -moz-animation:fadeIn 3s;
+  -ms-animation:fadeIn 3s;
+  -o-animation:fadeIn 3s;
+  animation:fadeIn 3s;
+}
+/* peopleUp */
+@-webkit-keyframes peopleUp { 
+    0% { top: 100px; }
+    100% { top: 0px; }
+}
+@-moz-keyframes peopleUp { 
+    0% { top: 100px; }
+    100% { top: 0px; }
+}
+@-ms-keyframes peopleUp { 
+    0% { top: 100px; }
+    100% { top: 0px; }
+}
+@-o-keyframes peopleUp { 
+    0% { top: 100px; }
+    100% { top: 0px; }
+}
+@keyframes peopleUp { 
+    0% { top: 100px; }
+    100% { top: 0px; }
+}
+
+
+/* logoDown */
+@-webkit-keyframes logoDown { 
+    0% { top: -50px; }
+    100% { top: 0px; }
+}
+@-moz-keyframes logoDown { 
+    0% { top: -50px; }
+    100% { top: 0px; }
+}
+@-ms-keyframes logoDown { 
+    0% { top: -50px; }
+    100% { top: 0px; }
+}
+@-o-keyframes logoDown { 
+    0% { top: -50px; }
+    100% { top: 0px; }
+}
+@keyframes logoDown { 
+    0% { top: -50px; }
+    100% { top: 0px; }
+}
+
+
+
+
+/* tagRight */
+@-webkit-keyframes tagRight { 
+    0% { left: -50px; opacity: 0;}
+    100% { left: 0px; opacity: 1;}
+}
+@-moz-keyframes tagRight { 
+    0% { left: -50px; opacity: 0;}
+    100% { left: 0px; opacity: 1;}
+}
+@-ms-keyframes tagRight { 
+    0% { left: -50px; opacity: 0;}
+    100% { left: 0px; opacity: 1;}
+}
+@-o-keyframes tagRight { 
+    0% { left: -50px; opacity: 0;}
+    100% { left: 0px; opacity: 1;}
+}
+@keyframes tagRight { 
+    0% { left: -30px; opacity: 0;}
+    100% { left: 0px; opacity: 1;}
+}
+
+
+
+
+
+
+
+
+/* fadeIn */
+@-webkit-keyframes fadeIn { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-ms-keyframes fadeIn { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeIn { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
